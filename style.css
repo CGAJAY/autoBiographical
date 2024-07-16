@@ -9,11 +9,13 @@
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
-	background-image: url("https://images.unsplash.com/photo-1716547286289-3e650d7bdf7a?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+	background-image: url("https://ds055uzetaobb.cloudfront.net/chapter/Autobiographical_Numbers-aeLrOI.png");
 }
 h2 {
 	margin: 20px 0;
 }
+
+/* Style the form */
 form {
 	background: transparent;
 	border: 2px solid white;
@@ -54,4 +56,17 @@ input[type="submit"] {
 input[type="submit"]:hover {
 	background-color: #66afe9;
 	color: white;
+}
+
+/* Style the result container */
+#result-cont {
+	display: block;
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	padding: 20px;
+	max-width: 800px;
+	text-align: center;
 }
