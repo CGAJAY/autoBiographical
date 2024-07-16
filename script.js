@@ -1,4 +1,4 @@
-let test = document.getElementById("test");
+const submitBtn = document.getElementById("submit");
 function checkNumberOfDigits() {
 	// Grab the number enterred
 	let num = document.getElementById("number-cont").value;
@@ -40,4 +40,7 @@ function autobiographical() {
 		return true;
 	}
 }
-test.addEventListener("click", autobiographical);
+submitBtn.addEventListener("click", (e) => {
+	e.preventDefault();
+	autobiographical();
+});
