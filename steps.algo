@@ -1,0 +1,65 @@
+//  create function checkNumberOfDigits
+// check the number of digits in the number
+// if the number of digits is >= 4 and <= 10 return that number
+// if the number of digits is < 4 and > 10 return false
+
+// PROBLEM - Check if number has more than 3 digits and less than 11 digits
+
+// CONSTRAINTS - Should be a number
+
+// INPUT - Only the number 
+
+// OUTPUT - Return true or false
+
+// SOLUTION - Check if the input is a number, Change it to a string to check the length of it. If the string has more than 3 characters and less than 11 characters return true otherwise return false
+
+
+ALGORITHM checkNumberOfDigits
+VAR
+    number : INTEGER;
+BEGIN
+    Read(number)
+    IF (type of number = integer) THEN
+       convert number to string
+       check if the number of characters in the string is >= 4 or 
+       <= 10
+       if true return true
+       if false return false
+    END_IF
+    Return false
+END
+
+// Create a function that takes an integer n and returns whether or not n is an autobiographical number
+// If a number is autobiographical, then the number's digits describe itself.
+// The first digit is the amount of times the digit 0 appears,
+//  the second digit is the amount of times the digit 1 appears,
+//  the third digit is the amount of times the digit 2 appears, etc.
+//  This repeats for all digits of the number.
+//  The number 6210001000 is autobiographical,
+//  because it has six 0's, two 1's, one 2, zero 3's, zero 4's,
+//  zero 5's, one 6, zero 7's, zero 8's, and zero 9's.
+
+// Have a variable to save the number of times a number appears and intialize it to zero
+// loop thru the number
+// nest another loop to go through the whool number and check if the number at a certain index is equal
+// to the number of times that number appears in the entire number
+// if true run the outer loop again
+// if false terminate the loop
+ALGORITHM autobiographical
+    VAR
+        number: STRING := checkNumberOfDigits;
+       count : INTEGER := 0;
+    BEGIN
+        FOR i FROM 0 TO number of characters in number -1 STEP 1  DO
+            FOR i FROM 0 TO mnumber of characters in number -1  STEP 1  DO
+                IF (number[j] is equal to i) THEN
+                    increment count
+                END_IF
+            END_FOR
+            IF (count is not equal to number[i]) THEN
+                return false
+            END_IF
+            count := 0;
+        END_FOR
+        RETURN value ;
+    END
